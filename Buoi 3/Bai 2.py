@@ -376,3 +376,4 @@ def show_frame(frame):
 # Khởi động ứng dụng
 show_frame(frame_main)
 root.mainloop()
+#
