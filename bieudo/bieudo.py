@@ -86,7 +86,6 @@ plt.show()
 
 # Thống kê các loại điểm
 print("Thống kê các loại điểm:")
-print(f"Tổng sinh viên đạt điểm A: {LoạiAp.sum()}")
 print(f"Tổng sinh viên đạt điểm A: {LoạiA.sum()}")
 print(f"Tổng sinh viên đạt điểm B+: {LoạiBp.sum()}")
 print(f"Tổng sinh viên đạt điểm C: {LoạiB.sum()}")
