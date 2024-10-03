@@ -48,7 +48,7 @@ class PlotManager:
         self.fs = fs
         self.duration = duration
         self.freqs = freqs
-        self.fig, self.ax = plt.subplots(2, 2, figsize=(10, 8))
+        self.fig, self.ax = plt.subplots(2, 2, figsize=(12, 8))
         plt.subplots_adjust(bottom=0.2)
 
         # Tạo tín hiệu và FFT
