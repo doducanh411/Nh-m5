@@ -85,18 +85,31 @@ def plot_statistics():
     plt.tight_layout()
     plt.show()
 
-# Vẽ biểu đồ kết quả dự đoán so với dữ liệu thực tế
+# Vẽ biểu đồ kết quả dự đoán so với dữ liệu thực tế và sai số
 def plot_results():
     if knn is None:
         messagebox.showerror("Lỗi", "Chưa có mô hình được huấn luyện.")
         return
+    
     y_predict = knn.predict(X_test)
     
+    plt.figure(figsize=(12, 6))
+    
+    # Vẽ dữ liệu thực tế
     plt.plot(range(0, len(y_test)), y_test, 'ro', label='Dữ liệu thực tế')
+    
+    # Vẽ dữ liệu dự đoán
     plt.plot(range(0, len(y_predict)), y_predict, 'bo', label='Dữ liệu dự đoán')
+    
+    # Tính và vẽ sai số
+    errors = y_predict - y_test  # Tính sai số
+    plt.plot(range(0, len(errors)), errors, 'go-', label='Sai số')  # Vẽ sai số
+    
+    # Vẽ các đường nối giữa dự đoán và thực tế
     for i in range(0, len(y_test)):
-        plt.plot([i, i], [y_test[i], y_predict[i]], 'green')
-    plt.title('KNN Result')
+        plt.plot([i, i], [y_test[i], y_predict[i]], 'green', linestyle='dashed', linewidth=0.5)
+
+    plt.title('KNN Result with Errors')
     plt.xlabel('Index')
     plt.ylabel('Performance Index')
     plt.legend()
