@@ -154,4 +154,4 @@ frame_plot.grid(row=7, column=0, columnspan=2)
 label_result = tk.Label(root, text="", justify="left")
 label_result.grid(row=8, column=0, columnspan=2)
 
-root.mainloop()
+root.mainloop()#####
