@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter, freqz
 
+
 # Hàm tạo bộ lọc thông thấp
 def butter_lowpass(cutoff, fs, order=5):
     nyquist = 0.5 * fs  # Tần số Nyquist
