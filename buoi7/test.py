@@ -11,11 +11,11 @@ pygame.display.set_caption('Tiêu đề của game')
 anh_nen = pygame.image.load('bg2.jpg')
 anh_nen = pygame.transform.scale(anh_nen, (chieu_dai, chieu_rong))
 #------------ tạo ảnh các quả táo, cam, oài ------------
-'''tao = pygame.image.load('tao.png')
+tao = pygame.image.load('tao.jpg')
 tao = pygame.transform.scale(tao, (60, 70))
-cam = pygame.image.load('cam.png')
+cam = pygame.image.load('cam.jpg')
 cam = pygame.transform.scale(cam, (60, 70))
-xoai = pygame.image.load('xoai.png')
+xoai = pygame.image.load('xoai.jpg')
 xoai = pygame.transform.scale(xoai, (60, 70))
 # ------------- Tạo vị trí ban đầu----------
 x_tao = 100
@@ -23,13 +23,13 @@ y_tao = 0
 x_cam = 200
 y_cam = 0
 x_xoai = 300
-y_xoai =0'''
+y_xoai =0
 #----------- tạo ảnh con chim--------------
-chim1 = pygame.image.load('chim1.png')
+chim1 = pygame.image.load('chim1.jpg')
 chim1 = pygame.transform.scale(chim1, (80, 70))
-chim2 = pygame.image.load('chim2.png')
+chim2 = pygame.image.load('chim2.jpg')
 chim2 = pygame.transform.scale(chim2, (80, 70))
-nui = pygame.image.load('nui.png')
+nui = pygame.image.load('nui.jpg')
 nui = pygame.transform.scale(nui, (250, 250))
 #---------- tạo vị trí ban đầu--------------
 x1 = 0
@@ -65,7 +65,7 @@ while True: # tạo vòng lặp game
         x1 = 0
     if x2 < 0:
         x2 = chieu_dai
-    '''w.blit(tao,(x_tao,y_tao))
+    w.blit(tao,(x_tao,y_tao))
     w.blit(cam,(x_cam,y_cam))
     w.blit(xoai,(x_xoai,y_xoai))
     y_tao = y_tao + 1
@@ -76,8 +76,8 @@ while True: # tạo vòng lặp game
     if y_cam > chieu_rong:
         y_cam = 0
     if y_xoai > chieu_rong:
-        y_xoai = 0'''
-    # Điền các thao tác game vào đây!
+        y_xoai = 0
+    #Điền các thao tác game vào đây!
     pygame.display.update()
     fpsClock.tick(FPS)
 '''Bài tập :
