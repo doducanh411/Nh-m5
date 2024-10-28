@@ -82,6 +82,7 @@ def calculate_integral():
     except Exception as e:
         messagebox.showerror("Lỗi", f"Có lỗi xảy ra: {str(e)}")
 
+
 # Hàm tìm cực trị
 def find_extrema():
     try:
