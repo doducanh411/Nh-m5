@@ -23,6 +23,7 @@ def giai_he_pt(A, B):
         return None
 
 
+
 # Hàm xử lý khi nhấn nút "Giải"
 def solve_system():
     try:
