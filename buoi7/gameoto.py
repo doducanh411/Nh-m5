@@ -4,6 +4,7 @@ import sys
 import random
 from pygame.locals import *
 
+
 # Khởi tạo Pygame
 pygame.init()
 chieu_dai, chieu_rong = 800, 600
